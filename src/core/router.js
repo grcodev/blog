@@ -1,7 +1,7 @@
-import * as Articles from "./pages/articles.js"
-import * as Contact  from "./pages/contact.js"
-import * as Ebook    from "./pages/ebook.js"
-import * as Legal    from "./pages/legal.js"
+import * as Articles from "../pages/articles.js"
+import * as Contact  from "../pages/contact.js"
+import * as Ebook    from "../pages/ebook.js"
+import * as Legal    from "../pages/legal.js"
 
 function setActiveNav() {
   const hash = location.hash || "#/"
