@@ -1,6 +1,5 @@
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js"
 
-// A API do marked mudou: renderer.link recebe um objeto {href, title, text}
 const renderer = {
   link({ href, title, text }) {
     const isExternal = typeof href === "string" &&

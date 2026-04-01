@@ -1,4 +1,4 @@
-import { parseMarkdown } from "../marked.lib.js"
+import { parseMarkdown } from "./marked.lib.js"
 
 // ── Lista de artigos ────────────────────────────────────────
 // Adicione novos artigos aqui. O arquivo .md deve existir em articles/<slug>.md
@@ -14,7 +14,6 @@ const articleCache = {}
 async function fetchArticle(slug) {
   if (articleCache[slug]) return articleCache[slug]
   try {
-    // Caminho relativo à raiz do projeto — funciona com Live Server
     const res = await fetch(`articles/${slug}.md`)
     if (!res.ok) return null
     const text = await res.text()
@@ -71,7 +70,6 @@ function escapeHtml(str) {
 }
 
 // ── Render principal ────────────────────────────────────────
-// slug: string | null — se passado, abre o artigo logo após montar a lista
 
 export async function render(slug) {
   const app = document.getElementById("app")
