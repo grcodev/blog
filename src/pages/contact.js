@@ -5,9 +5,9 @@ export function render() {
     </div>
     <div class="contact-item">   
       <span>GitHub</span>
-        <a href="https://github.com/devgbr86">github.com/ribeirorep</a>
+        <a href="https://github.com/ribeirorep">github.com/ribeirorep</a>
       <span>LinkedIn</span>
-        <a href="https://linkedin.com/in/devgbr">linkedin.com/in/gribeirodev</a>
+        <a href="https://linkedin.com/in/gribeirodev">linkedin.com/in/gribeirodev</a>
       <span>Email</span>
         <a href="mailto:topverbs@gmail.com">topverbs@gmail.com</a>
     </div>
