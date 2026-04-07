@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "intro-web",
+    "title": "Introdução à Web",
+    "date": "2026-04-07",
+    "tags": ["web", "iniciante"],
+    "description": "Um overview sobre como a web funciona: HTTP, navegadores e a estrutura básica de uma página."
+  },
+  {
+    "slug": "intro-javascript",
+    "title": "Introdução ao JavaScript",
+    "date": "2026-04-07",
+    "tags": ["javascript", "web", "iniciante"],
+    "description": "Primeiros passos com JavaScript no navegador: variáveis, funções e manipulação do DOM."
+  }
+]

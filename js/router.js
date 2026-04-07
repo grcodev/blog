@@ -1,83 +1,32 @@
-// router.js — roteador hash simples
+// router.js
 
-const Router = (() => {
-  const routes = {};
-
-  function define(path, handler) {
-    routes[path] = handler;
+function detectBase() {
+  const p = window.location.pathname;
+  if (p.endsWith(".html")) {
+    return p.substring(0, p.lastIndexOf("/"));
   }
+  const baseTag = document.querySelector("base[href]");
+  if (baseTag) return baseTag.getAttribute("href").replace(/\/$/, "");
+  return "";
+}
 
-  function resolve() {
-    // pega o hash sem o #, ex: "#/shop" → "/shop"
-    const hash = window.location.hash.replace(/^#/, '') || '/';
-    const path = hash.split('?')[0];
+const BASE = detectBase();
+window.__router__ = { BASE };
 
-    // tenta rota exata, depois fallback para /
-    const handler = routes[path] || routes['/'];
+const routes = {
+  "/":        { file: "markdown/pages/home.md",    type: "home" },
+  "/blog":    { file: null,                         type: "blog" },
+  "/kits":    { file: "markdown/pages/kits.md",    type: "page" },
+  "/legal": { file: "markdown/pages/legal.md", type: "page" },
+};
 
-    if (typeof handler === 'function') {
-      handler(path);
-    }
+function resolveRoute(path) {
+  let p = path;
+  if (BASE && p.startsWith(BASE)) p = p.slice(BASE.length) || "/";
+  if (p === "/index.html" || p === "") p = "/";
+  if (p !== "/" && p.endsWith("/")) p = p.slice(0, -1);
 
-    // marca link ativo no nav
-    document.querySelectorAll('#mainNav a').forEach(a => {
-      const href = a.getAttribute('href').replace(/^#/, '') || '/';
-      // ativo se rota exata OU se é pai da rota atual (ex: /legal)
-      const isActive = href === path || (href !== '/' && path.startsWith(href));
-      a.classList.toggle('active', isActive);
-    });
+  if (routes[p]) return routes[p];
 
-    // fecha menu mobile ao navegar
-    closeMobileMenu();
-
-    // scroll para o topo
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }
-
-  function closeMobileMenu() {
-    const nav    = document.getElementById('mainNav');
-    const toggle = document.getElementById('navToggle');
-    if (!nav || !toggle) return;
-    nav.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }
-
-  function init() {
-    window.addEventListener('hashchange', resolve);
-
-    // Inicializa depois que o DOM estiver pronto
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        initHamburger();
-        resolve();
-      });
-    } else {
-      initHamburger();
-      resolve();
-    }
-  }
-
-  function initHamburger() {
-    const toggle = document.getElementById('navToggle');
-    const nav    = document.getElementById('mainNav');
-    if (!toggle || !nav) return;
-
-    toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    // Fecha ao clicar fora
-    document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-        closeMobileMenu();
-      }
-    });
-  }
-
-  function navigate(path) {
-    window.location.hash = path;
-  }
-
-  return { define, init, navigate };
-})();
+  return { file: null, type: "not-found" };
+}
