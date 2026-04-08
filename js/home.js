@@ -116,12 +116,12 @@ function renderHome() {
     </section>
 
     <section class="articles-section">
-      <h2>Artigos</h2>
+      <h2></h2>
       <input
         id="article-search"
         class="article-search"
         type="text"
-        placeholder="🔍 Pesquisar"
+        placeholder="🔍 Pesquisar artigos"
         autocomplete="off"
       />
       <div id="article-list-container">

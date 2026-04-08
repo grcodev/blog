@@ -22,7 +22,7 @@ function renderFooter() {
         </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025-2026 Fyregrid</span>
+      <span>© Fyregrid</span>
       <a href="#" id="footer-legal-link">Privacidade e Termos</a>
     </div>
   `;
@@ -108,7 +108,7 @@ function showLegal() {
       <p>Leis da República Federativa do Brasil. Foro da comarca do domicílio do titular.</p>
 
       <hr>
-      <p><em>© 2025-2026 Fyregrid — Todos os direitos reservados.</em></p>
+      <p><em>© Fyregrid — Todos os direitos reservados.</em></p>
 
      
     </div>
