@@ -16,7 +16,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 57px;
-  /* altura da navbar fixa */
 }
 
 /* ─── NAV ─────────────────────────────────────────────── */
@@ -28,11 +27,11 @@ body {
   right: 0;
   z-index: 100;
   background: #fff;
-  padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  padding: 1rem max(3rem, calc((100vw - 960px) / 2));
 }
 
 #nav a {
@@ -54,30 +53,33 @@ body {
 /* ─── APP (conteúdo principal) ───────────────────────── */
 
 #app {
-  max-width: 680px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 4rem 3rem;
   flex: 1;
 }
 
 /* ─── HOME INTRO ─────────────────────────────────────── */
 
 .home-intro {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #eee;
 }
 
 .home-title {
   font-family: Georgia, serif;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.6rem;
+  line-height: 1.15;
 }
 
 .home-subtitle {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #666;
   line-height: 1.6;
 }
 
@@ -118,30 +120,36 @@ body {
 
 .article-list {
   list-style: none;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .article-list li {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: baseline;
   border-bottom: 1px solid #eee;
-  padding: 0.85rem 0;
-  gap: 1rem;
+  padding: 1.1rem 0;
+  gap: 2rem;
+  transition: background 0.1s;
+}
+
+.article-list li:hover {
+  background: #fafafa;
+  margin: 0 -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .article-list-main {
-  flex: 1;
   min-width: 0;
 }
 
 .article-list a {
   color: #111;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .article-list a:hover {
@@ -149,16 +157,17 @@ body {
 }
 
 .article-description {
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 0.2rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+  color: #888;
+  margin-top: 0.25rem;
+  line-height: 1.5;
+  max-width: 72ch;
 }
 
 .article-list span {
   font-family: monospace;
   font-size: 0.78rem;
-  color: #aaa;
+  color: #bbb;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -166,37 +175,38 @@ body {
 /* ─── ARTICLES SECTION ───────────────────────────────── */
 
 .articles-section {
-  border-top: 1px solid #ddd;
-  padding-top: 2rem;
+  padding-top: 0;
 }
 
 .articles-section h2 {
   font-family: monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #aaa;
-  margin-bottom: 1.25rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  margin-bottom: 1.5rem;
 }
 
 /* ─── SEARCH ─────────────────────────────────────────── */
 
 .article-search {
   width: 100%;
+  max-width: 380px;
   border: none;
   border-bottom: 1px solid #ddd;
-  padding: 0.4rem 0;
+  padding: 0.45rem 0;
   font-family: Georgia, serif;
   font-size: 0.95rem;
   color: #111;
   background: transparent;
   outline: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   transition: border-color 0.15s;
+  display: block;
 }
 
 .article-search::placeholder {
-  color: #bbb;
+  color: #ccc;
 }
 
 .article-search:focus {
@@ -209,13 +219,13 @@ body {
   color: #aaa;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
 /* ─── BACK LINK ──────────────────────────────────────── */
 
 .back-link-wrap {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #eee;
 }
@@ -227,7 +237,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  opacity: 0.5;
+  opacity: 0.45;
   transition: opacity 0.15s;
 }
 
@@ -239,9 +249,10 @@ body {
 
 .kits-contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.75rem;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
 }
 
 .kits-cta {
@@ -250,7 +261,7 @@ body {
   font-size: 0.85rem;
   color: #fff;
   background: #111;
-  padding: 0.6rem 1.25rem;
+  padding: 0.65rem 1.4rem;
   text-decoration: none;
   letter-spacing: 0.04em;
   transition: opacity 0.15s;
@@ -264,28 +275,27 @@ body {
 .kits-cta--secondary {
   background: transparent;
   color: #111;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
 }
 
 .kits-cta--secondary:hover {
   opacity: 0.6;
 }
 
-
 /* ─── FOOTER ─────────────────────────────────────────── */
 
 #site-footer {
   border-top: 1px solid #ddd;
   margin-top: auto;
-  padding: 2.5rem 2rem 1.5rem;
+  padding: 3rem max(3rem, calc((100vw - 960px) / 2)) 1.75rem;
   font-size: 0.85rem;
 }
 
 .footer-inner {
-  max-width: 680px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -293,23 +303,24 @@ body {
 
 .footer-about {
   flex: 1;
-  min-width: 200px;
+  min-width: 240px;
+  max-width: 420px;
 }
 
 .footer-brand {
   display: block;
   font-family: monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .footer-about p {
   font-size: 0.82rem;
-  color: #666;
-  line-height: 1.6;
+  color: #777;
+  line-height: 1.65;
 }
 
 .footer-links {
@@ -321,20 +332,20 @@ body {
 .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.4rem;
 }
 
 .footer-col-title {
   font-family: monospace;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #aaa;
-  margin-bottom: 0.3rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  margin-bottom: 0.4rem;
 }
 
 .footer-col a {
-  color: #555;
+  color: #666;
   text-decoration: none;
   font-size: 0.82rem;
   transition: color 0.15s;
@@ -345,20 +356,20 @@ body {
 }
 
 .footer-bottom {
-  max-width: 680px;
-  margin: 1.5rem auto 0;
+  max-width: 960px;
+  margin: 1.75rem auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: monospace;
-  font-size: 0.72rem;
-  color: #bbb;
+  font-size: 0.68rem;
+  color: #ccc;
   border-top: 1px solid #f0f0f0;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
 }
 
 .footer-bottom a {
-  color: #bbb;
+  color: #ccc;
   text-decoration: none;
 }
 
@@ -368,10 +379,37 @@ body {
 
 /* ─── RESPONSIVE ─────────────────────────────────────── */
 
+@media (min-width: 1280px) {
+  #app {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #nav {
+    padding: 1rem 2.5rem;
+  }
+
+  #app {
+    max-width: 780px;
+    padding: 3.5rem 2.5rem;
+  }
+
+  #site-footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .footer-inner,
+  .footer-bottom {
+    max-width: 780px;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     padding-top: 49px;
-    /* navbar menor no mobile */
   }
 
   #nav {
@@ -380,7 +418,21 @@ body {
   }
 
   #app {
+    max-width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .home-intro {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .home-title {
+    font-size: 1.75rem;
+  }
+
+  .kits-contact {
+    flex-direction: column;
   }
 
   .footer-inner {
@@ -392,17 +444,28 @@ body {
     padding: 2rem 1rem 1.5rem;
   }
 
+  .footer-inner,
+  .footer-bottom {
+    max-width: 100%;
+  }
+
   .article-list li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .article-list li:hover {
+    background: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .article-list span {
     font-size: 0.72rem;
   }
 
-  .home-title {
-    font-size: 1.6rem;
+  .article-search {
+    max-width: 100%;
   }
 }
