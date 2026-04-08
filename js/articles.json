@@ -1,23 +1,37 @@
 [
   {
-    "slug": "intro-web",
-    "title": "Introdução à Web",
-    "date": "2025-11",
-    "tags": ["web", "iniciante"],
-    "description": "Um overview sobre como a web funciona: HTTP, navegadores e a estrutura básica de uma página."
+    "slug": "micro-features",
+    "title": "Arquitetura Baseada em Funcionalidades, Escalabilidade e Manutenibilidade",
+    "date": "2026-04",
+    "tags": ["projetos", "frontend", "arquitetura"],
+    "description": "A Arquitetura Baseada em Funcionalidades (Feature-Based Architecture - FBA) emerge como uma estratégia poderosa para organizar projetos, focando na entrega de valor através de funcionalidades de negócio independentes e autocontidas."
   },
   {
-    "slug": "intro-javascript",
-    "title": "Introdução ao JavaScript",
-    "date": "2025-11",
-    "tags": ["javascript", "web", "iniciante"],
-    "description": "Primeiros passos com JavaScript no navegador: variáveis, funções e manipulação do DOM."
+    "slug": "blog-front",
+    "title": "Criando um Blog Totalmente Front-end com JavaScript e GitHub Pages",
+    "date": "2026-04",
+    "tags": ["projetos", "frontend", "blog"],
+    "description": "Este artigo detalha a construção de um blog estático, leve e eficiente, utilizando apenas tecnologias front-end: JavaScript puro para a lógica, a biblioteca Marked.js para renderização de Markdown e o GitHub Pages para hospedagem gratuita."
   },
-   {
+     {
     "slug": "guide-links",
     "title": "Guias, links e referências Frontend",
     "date": "2026-04",
     "tags": ["guias", "links", "referencias"],
     "description": "O cenário do desenvolvimento front-end está em constante evolução, com novas tecnologias, frameworks e metodologias surgindo a todo momento."
+  },
+  {
+    "slug": "intro-javascript",
+    "title": "Introdução: JavaScript",
+    "date": "2025-11",
+    "tags": ["javascript", "web", "iniciante"],
+    "description": "Primeiros passos com JavaScript no navegador: variáveis, funções e manipulação do DOM."
+  },
+  {
+    "slug": "intro-web",
+    "title": "Introdução: Programação Web",
+    "date": "2025-11",
+    "tags": ["programacao", "web", "iniciante"],
+    "description": "Um overview sobre como a web funciona: HTTP, navegadores e a estrutura básica de uma página."
   }
 ]
