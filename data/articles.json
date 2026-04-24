@@ -1,10 +1,17 @@
 [
+       {
+    "slug": "jskit",
+    "title": "🛠️ JavaScript Boilerplate Kit",
+    "date": "2026-04",
+    "tags": ["boilerplate", "javascript", "pack"],
+    "description": "Arquivos + Documentação de Projetos + Boilerplates JavaScript Frontend/NodeJS/APIs."
+  },
      {
     "slug": "ebook",
     "title": "📘 EBOOK Manual Completo Git & VSCode",
     "date": "2026-04",
     "tags": ["ebook", "vscode", "git"],
-    "description": "Cada capítulo foi pensado para quem está começando — sem assumir que você já sabe nada. Você vai construir projetos reais, passo a passo, do ambiente de desenvolvimento até o deploy, com código que você pode mostrar hoje mesmo no seu GitHub."
+    "description": "EBook sobre Configuração Git / VSCode + Tutorial Deploy GitHub Pages + Checklist, Recursos e Links."
   },
    {
     "slug": "coffee-history",
