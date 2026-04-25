@@ -80,9 +80,9 @@ function renderFooter() {
         <span class="footer-brand">Sobre</span>
         <p>Projeto desenvolvido por Guilherme Ribeiro.</p>
         <p><br>🛠️ Documentação de Projetos + JavaScript Boilerplate Kit
-        <br><a href="https://grcodev.github.io/blog/p/jskit" target="_blank" rel="noopener">→ Explorar</a>
+        <br><a href="https://grcodev.github.io/blog/p/jskit">→ Explorar</a>
         <br>📘 EBOOK Manual Completo Git & VSCode
-        <br><a href="https://grcodev.github.io/blog/p/ebook" target="_blank" rel="noopener">→ Explorar</a>
+        <br><a href="https://grcodev.github.io/blog/p/ebook">→ Explorar</a>
         </p>
       </div>
       <div class="footer-col">
