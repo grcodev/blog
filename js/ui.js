@@ -8,8 +8,7 @@ function renderNavbar() {
   if (!nav) return;
 
   nav.innerHTML = `
-    <img src="./grimbook_icon.png" style="width: 32px; height: 32px; border-radius: 25%;">
-    <a href="/blog/" data-link>Home</a>
+<img src="${BASE}/grimbook_icon.png" style="width: 32px; height: 32px; border-radius: 25%;">    <a href="/blog/" data-link>Home</a>
   `;
 
   bindLinks();
