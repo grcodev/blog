@@ -19,13 +19,18 @@ const CONFIG = {
   products: [
     {
       icon:  "🛠️",
-      title: "Documentação de Projetos + JavaScript Boilerplate Kit",
+      title: "JavaScript Boilerplate Kit + Documentação + README",
       slug:  "jskit",
     },
     {
       icon:  "📘",
-      title: "EBOOK Manual Completo Git & VSCode",
-      slug:  "ebook",
+      title: "EBOOK Manual/Tutorial Completo Git & Visual Studio Code",
+      slug:  "gitbook",
+    },
+       {
+      icon:  "📕",
+      title: "Aprenda a criar Livros/EBooks profissionais usando Markdown + Pandoc",
+      slug:  "mdbook",
     },
   ],
 };
