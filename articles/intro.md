@@ -8,7 +8,7 @@ Transforme conhecimento técnico em ativos reais para estudo, portfólio e venda
 
 
 
-[→ AMOSTRA GRATUITA](https://github.com/grcodev/grcodev/releases/vault/JSRoadmap.epub)
+[→ EBOOK GRATUITO](https://github.com/grcodev/grcodev/releases/vault/JSRoadmap.epub)
 
 
 
@@ -20,7 +20,7 @@ Transforme conhecimento técnico em ativos reais para estudo, portfólio e venda
 
 
 
-[→ EXPLORAR](https://grcodev.github.io/lab/p/bookgit)
+[→ Explorar EBOOK Git + VSCode](https://grcodev.github.io/lab/p/bookgit)
 
 
 
@@ -31,7 +31,7 @@ Transforme conhecimento técnico em ativos reais para estudo, portfólio e venda
 <img src="https://github.com/grcodev/grcodev/releases/download/vault/md.png" width="79%" height="79%" style="border-radius:2%;" />
 
 
-[→ EXPLORAR](https://grcodev.github.io/lab/p/bookmd)
+[→ Explorar EBOOK Markdown + Pandoc](https://grcodev.github.io/lab/p/bookmd)
 
 
 
@@ -41,7 +41,7 @@ Transforme conhecimento técnico em ativos reais para estudo, portfólio e venda
 <img src="https://github.com/grcodev/grcodev/releases/download/vault/kit.png" width="79%" height="79%" style="border-radius:2%;" />
 
 
-[→ EXPLORAR](https://grcodev.github.io/lab/p/kitjs)
+[→ Explorar JS Boilerplate Kit](https://grcodev.github.io/lab/p/kitjs)
 
 
 
