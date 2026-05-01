@@ -7,7 +7,7 @@ Base prática para aprender, construir e publicar projetos web do zero. Conteúd
 
 
 
-[✔️ EBOOK GRATUITO JAVASCRIPT ROADMAP KIT](https://github.com/grcodev/grcodev/releases/vault/JSRoadmap.epub)
+[✔️🔥 EBOOK GRATUITO JAVASCRIPT ROADMAP KIT](https://github.com/grcodev/grcodev/releases/vault/JSRoadmap.epub)
 
 
 
@@ -20,7 +20,7 @@ Base prática para aprender, construir e publicar projetos web do zero. Conteúd
 
 
 
-[✔️ EXPLORAR EBOOK GIT + VSCODE](https://grcodev.github.io/lab/p/ebook-git)
+[✔️📘 EXPLORAR EBOOK GIT + VSCODE](https://grcodev.github.io/lab/p/ebook-git)
 
 
 Aprenda as duas ferramentas essenciais para qualquer Desenvolvedor Web. Neste EBook voce vai aprender a instalar/configurar Git e VSCode, configurar extensões Markdown para VSCode, Deploy básico GitHub Pages, todos os passos básicos para voce começar a criar e desenvolver projetos web com versionamento de código profissional.
@@ -43,7 +43,7 @@ Aprenda as duas ferramentas essenciais para qualquer Desenvolvedor Web. Neste EB
 
 
 
-[✔️ EXPLORAR EBOOK MARKDOWN + PANDOC](https://grcodev.github.io/lab/p/ebook-pandoc)
+[✔️📕 EXPLORAR EBOOK MARKDOWN + PANDOC](https://grcodev.github.io/lab/p/ebook-pandoc)
 
 
 Aprenda um fluxo prático para transformar texto simples em conteúdo profissional usando Markdown, Visual Studio Code e Pandoc. Este eBook foi criado para quem deseja produzir documentação, artigos, eBooks, PDFs e arquivos EPUB com rapidez, organização e independência de plataformas complexas. Ideal para estudantes, programadores, criadores de conteúdo, freelancers e pessoas que valorizam produtividade.
@@ -65,7 +65,7 @@ Aprenda um fluxo prático para transformar texto simples em conteúdo profission
 
 
 
-[✔️ EXPLORAR JS BOILERPLATE KIT](https://grcodev.github.io/lab/p/kit-js)
+[✔️🛠️ EXPLORAR JS BOILERPLATE KIT](https://grcodev.github.io/lab/p/kit-js)
 
 
 
